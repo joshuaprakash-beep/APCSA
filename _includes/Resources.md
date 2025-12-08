@@ -38,17 +38,17 @@
 4. The 'Super' key word
 <https://www.youtube.com/watch?v=Qb_NUn0TSAU>
 
-5. getter and setter
+5. getter and setter methods
 <https://www.youtube.com/watch?v=6wVmqY-CrGM>
 
-## abstract class
+## Abstract class
 <https://www.youtube.com/watch?v=52frlN8webg>
 
 ## Data structures
 <https://www.youtube.com/watch?v=bum_19loj9A>
 <https://www.youtube.com/watch?v=O9v10jQkm5c>
 
-## static vs non-static
+## Static vs Non-static: how to use them
 <https://www.youtube.com/watch?v=-Y67pdWHr9Y>
 
 ## Markov Chain
@@ -57,7 +57,7 @@
 ## Boolean and conditional
 <https://codingbat.com/doc/java-if-boolean-logic.html>
 
-# Content Learn and Review 
+## Content Learn and Review 
 
 <https://play.juicemind.com/dashboard/explore/class/ap-cs-a-codeorg?tab=quizzes>
 
