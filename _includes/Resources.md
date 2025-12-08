@@ -16,7 +16,7 @@
 ## How to debug? A good programmer must know where is the bug....
 <https://greenteapress.com/thinkjava6/html/thinkjava6018.html>
 
-### Natural language debugging
+1. Natural language debugging
 <https://en.wikipedia.org/wiki/Rubber_duck_debugging>
 
 ## OOP
@@ -24,21 +24,21 @@
 
 ## Superclass, subclass, inheritnace
 
-### Introduction - the Chef
+1. Introduction - the Chef
 <https://www.youtube.com/watch?v=ePFWoOnyYHc>
 
-### Ploymorphism - over riding with subclass and parent class, this extends the chef intro. or method overloading
+2. Polymorphism - over riding with subclass and parent class, this extends the chef intro. or method overloading
 <https://www.youtube.com/watch?v=jhDUxynEQRI>
 
 
-### College homework Example - read document, and write code
+3. College homework Example - read document, and write code
 <https://www.youtube.com/watch?v=iV-rrFETXjY>
 
 
-### The 'Super' key word
+4. The 'Super' key word
 <https://www.youtube.com/watch?v=Qb_NUn0TSAU>
 
-## getter and setter
+5. getter and setter
 <https://www.youtube.com/watch?v=6wVmqY-CrGM>
 
 ## abstract class
