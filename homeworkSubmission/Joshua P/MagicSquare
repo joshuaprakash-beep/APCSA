@@ -1,0 +1,113 @@
+public class MagicSquare
+{
+  private int [][] mat;
+  private int rowSum;
+
+  public MagicSquare(int[][] m)
+{
+  mat = new int[m.length][m.length];
+  for(int r = 0; r < m.length; r++)
+    {
+      for (int c = 0; c < m.length; c++)
+      {
+        mat[r][c] = m[r][c];
+      }
+  }
+  rowSum = 0;
+  for (int c = 0; c < mat.length; c++)
+  {
+      rowSum += mat[0][c];
+  }
+}
+public boolean isUnique()
+{
+  int n = mat.length;
+  boolean[] seen = new boolean[n * n + 1]
+
+  for (int r = 0; r < n; r++)
+  {
+      for (int c = 0; c < n; c++)
+      {
+          int val = mat[r][c]; 
+
+          if (val < 1 || val > n * n)
+              return false;
+
+        if (seen[val])
+          return false;
+        seen[val] = true;
+      }
+  }
+  return true;
+}
+  public boolean rowSumsEqual()
+  {
+      for (int r = 0; r < mat.length; r++)
+      { 
+          int sum = 0;
+          for (int c = 0; c < mat.length; c++)
+          {
+              sum += mat[r][c];
+          }
+          if (sum != rowSum)
+                return false;
+      }
+      return true;
+  }
+  public boolean columnSumsEqual()
+  {
+    for (int c = 0; c < mat.length; c++)
+    { 
+        int sum = 0;
+        for (int r = 0; r < mat.length; r++)
+        {
+            sum += mat[r][c];
+        }
+        if (sum != rowSum)
+            return false;
+    }
+    return true; 
+  }
+  public boolean diagonalSumsEqual() 
+  { 
+      int diag1 = 0;
+      int diag2 = 0;
+      for (int i = 0; i < mat.length; i++)
+      {
+          diag1 += mat[i][i];
+          diag2 += mat[i][mat.length - 1 - i];
+      }
+      return diag1 == rowSum && diag2 == rowSum;
+  }
+  public boolean isMagic()
+  {
+    return isUnique() &&
+           rowSumsEqual() &&
+           columnSumsEqual() &&
+           diagonalSumsEqual();
+  }
+
+  public String toString()
+  { 
+      String output = "";
+
+      for (int r = 0; r < mat.length; r++)
+      {
+          for (int c = 0; c < mat.length; c++)
+          {
+            output += mat[r][c] + " ";
+          }
+          output += "\n";
+      }
+      if (isMagic())
+          output += "\nMAGIC SQUARE\n";
+      else 
+          output += "\nNOT A MAGIC SQUARE\n";
+      return output;
+    }
+  }
+              
+
+      
+
+  
