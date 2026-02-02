@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
  
 // Main class
-class Geeks {
+class ArrayTest {
    
     // Main driver method
     public static void main(String args[])
